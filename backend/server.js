@@ -26,14 +26,14 @@ let reqCnt = 0
 app.get("/", (req, res) => {
   reqCnt += 1;
   console.log(`resCnt ${reqCnt}`);
-  permutations([1, 33, 5]);
-  permutations([1, 33, 5]);
-  permutations([1, 33, 5]);
-  permutations([1, 33, 5]);
-  permutations([1, 33, 5]);
-  permutations([1, 33, 5]);
-  permutations([1, 33, 5]);
-  permutations([1, 33, 5]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  permutations([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   res.send(`
     <h1>API is running...<h1>
     <h2>Counter: ${reqCnt}<h2>
