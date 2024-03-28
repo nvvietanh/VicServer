@@ -1,12 +1,12 @@
-const express = required("express");
+const express = require("express");
 
 const app = express();
 
 let reqCnt = 0
 app.get("/", (req, res) => {
   reqCnt += 1;
-  console(`resCnt ${reqCnt}`);
-  res.send("API is running...");
+  console.log(`resCnt ${reqCnt}`);
+  res.send("<h1>API is running...<h1>");
 })
 
 PORT = 5000
