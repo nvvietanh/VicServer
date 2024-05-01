@@ -527,4 +527,10 @@ app.post("/", (req, res) => {
 PORT = 5000
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
+	const osu = require('node-os-utils')
+	var cpu = osu.cpu
+	cpu.usage()
+	  .then(info => {
+	    console.log(info)
+	  })
 })
